@@ -1,4 +1,36 @@
-.img-wrapper {
-    display: inline-block;
-    float: left;
+.pizza {
+    padding: 16px 0;
+    border-bottom: 1px solid grey;
+    &:last-child {border: none;}
+    .img-wrapper {
+        display: inline-block;
+        float: left;
+        margin: 0 20px 0 0;
+    }
+}
+
+.header {
+    position: relative;
+    width: 100vw;
+    max-width: 1200px;
+    height: 200px;
+    margin: -20px 0 20px 0;
+    img {
+        z-index: 0;
+        object-fit: cover;
+        object-position: 100% 25%;
+    }
+    h1 {
+        position: relative;
+        color: bisque;
+        z-index: 1;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 140px;
+    }
+}
+
+.content {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 3rem;
 }

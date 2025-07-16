@@ -17,7 +17,7 @@ export interface Pizza {
 })
 
 export class App {
-  protected readonly title = signal('user');
+  protected readonly title = signal('please select from the following pizzas');
 
   public isSelected: boolean = false;
   public selectedPizza: Pizza | null = null;
