@@ -26,7 +26,11 @@ export class App {
     console.log(`i used to have ${pizza.name} dreams until i found out there were other ways to score`);
     this.selectedPizza = pizza;
     this.isSelected = true;
+  }
 
+  public cancelSelection(){
+    this.selectedPizza = null;
+    this.isSelected = false;
   }
 
   pizzas = [
